@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 angular.module('boaWikiApp', [
   'ngCookies',
@@ -6,13 +6,10 @@ angular.module('boaWikiApp', [
   'ngSanitize',
   'ngRoute'
 ])
-  .config(function ($routeProvider) {
+  .config ($routeProvider) ->
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
+      .when '/',
+        templateUrl: 'views/main.html'
         controller: 'MainCtrl'
-      })
-      .otherwise({
+      .otherwise
         redirectTo: '/'
-      });
-  });
